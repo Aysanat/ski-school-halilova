@@ -25,16 +25,25 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* {
+* { 
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgba(102, 209, 255, .1);
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-size: medium;
     color: #000;
-    text-align: center;
+    background-color: rgba(102, 209, 255, .1);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .container {
@@ -43,118 +52,186 @@ body {
 }
 
 .header {
-    background-color: rgba(102, 209, 255, 1);
+    padding: 31px 0;
+    background-color: rgba(102, 209, 255);
 }
 
 .header_row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header_btn {
+    padding: 8px 31px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 29.26px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 4px
+}
+
+.header_logo {
+    padding-left: 227px;
+    padding-right: 223.5px;
 }
 
 .phone_number {
-    color: #000;
+    font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 500;
-    line-height: 34.13px;
-    text-decoration: none;
+    line-height: 34px;
+    color: #000;
 }
 
 .promo {
-    color: white;
-    background-color: rgba(6, 13, 16, 0.25);
     background-image: url('../images/promo-skischool.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
+    text-align: center;
 }
 
 .promo_title {
-    display: block;
+    padding-bottom: 60px;
     padding-top: 240px;
+    margin: 0;
     font-size: 60px;
     font-weight: 500;
     line-height: 88.92px;
+    text-shadow: 1px 1px 2px rgba(6, 13, 16, 1);
 }
 
 .promo_text {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 0;
     padding-bottom: 260px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
     line-height: 39.01px;
+    text-shadow: 1px 1px 2px rgba(6, 13, 16, 1);
 }
 
 .how_learn {
+    padding: 0;
 }
 
 .how_learn_title {
-    margin-top: 170px;
+    padding-top: 170px;
+    padding-bottom: 100px;
+    margin: 0;
     font-size: 48px;
     font-weight: 500;
     line-height: 80.16px;
+    text-align: center;
 }
 
 .advantages_list,
 .advantages_list_2 {
-    display: inline-flex;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.advantage_item {
+    display: flex;
+    flex-basis: calc(50% - 30px / 2);
+    flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
 }
 
 .advantage_title {
     font-size: 32px;
     font-weight: 500;
-    line-height: 53.44px;
+    line-height: 53px;
 }
 
 .advantage_text {
+    padding-bottom: 170px;
+    padding-right: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 400;
-    line-height: 36.4px;
+    line-height: 36px;
 }
 
-.lead_block_title {
-    margin-top: 170px;
+.lead_block {
+    text-align: center;
+    background-image: linear-gradient(208deg rgba(102, 133, 183) 43.85%, rgb(255, 255, 255) 43.86%);
+}
+
+.lb_title {
+    padding-top: 170px;
+    margin: 0;
     font-size: 48px;
     font-weight: 500;
     line-height: 80.16px;
+    border-top: 1px solid rgba(6, 13, 16, 1);
 }
 
-.lead_block_btn {
+.lb_btn {
+    padding: 20px 107px 22px 108px;
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 500;
     line-height: 43.88px;
     background-color: rgba(255, 255, 255, 0);
-    padding: 20px 107px 22px 108px;
 }
 
-
-.lead_block_row {
-    margin-top: 130px;
-    margin-bottom: 180px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-content: space-between;
+.lb_visual {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 130px;
+    padding-bottom: 160px;
 }
 
-/*.footer {
+.footer {
+    padding: 35px 0 35px;
+    color: white;
     background-color: #000;
-    color: white
 }
 
 .footer_row {
     display: flex;
-    align-content: flex-start;
     justify-content: space-between;
-}*/
+    align-items: center;
+    align-content: flex-start;
+}
+
+.social_list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.social_icon {
+    display: block;
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.join {
+    padding-right: 30px;
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.copyright {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
