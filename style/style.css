@@ -26,11 +26,12 @@
 }
 
 * { 
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-size: medium;
     color: #000;
@@ -38,6 +39,7 @@ body {
 }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
@@ -70,13 +72,14 @@ img {
     line-height: 29.26px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 4px
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.header_logo {
+/*.logo {
     padding-left: 227px;
     padding-right: 223.5px;
-}
+}*/
 
 .phone_number {
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +96,10 @@ img {
     background-size: cover;
     color: white;
     text-align: center;
+}
+
+.promo_fade {
+    background-color: rgba(6, 13, 16, 0.25);
 }
 
 .promo_title {
@@ -160,7 +167,6 @@ img {
 
 .lead_block {
     text-align: center;
-    background-image: linear-gradient(208deg rgba(102, 133, 183) 43.85%, rgb(255, 255, 255) 43.86%);
 }
 
 .lb_title {
@@ -173,13 +179,17 @@ img {
 }
 
 .lb_btn {
-    padding: 20px 107px 22px 108px;
+    display: inline-block;
+    padding: 20px 108px;
     margin-top: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 500;
     line-height: 43.88px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: inherit;
+    border: 3px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .lb_visual {
@@ -228,17 +238,16 @@ img {
 }
 
 .join {
-    padding-right: 30px;
-    margin: 0;
-    font-family: Montserrat;
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 33px;
 }
 
 .copyright {
-    margin: 0;
-    font-family: Montserrat;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
