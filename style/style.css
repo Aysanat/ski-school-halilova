@@ -76,11 +76,6 @@ img {
     cursor: pointer;
 }
 
-/*.logo {
-    padding-left: 227px;
-    padding-right: 223.5px;
-}*/
-
 .phone_number {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
@@ -123,7 +118,7 @@ img {
 }
 
 .how_learn {
-    padding: 0;
+    padding-bottom: 170px;
 }
 
 .how_learn_title {
@@ -139,26 +134,32 @@ img {
 .advantages_list,
 .advantages_list_2 {
     display: flex;
-    padding: 0;
+    align-content: space-between;
+    column-gap: 30px;
+    row-gap: 70px;
     list-style: none;
 }
 
+/*.advantages_list .advantage_item {
+    margin-bottom: 70px;
+}*/
+
 .advantage_item {
-    display: flex;
-    flex-basis: calc(50% - 30px / 2);
-    flex-direction: column;
-    justify-content: space-between;
+    row-gap: 70px;
+    flex-basis: 33.33%;
+    display: block;
 }
 
 .advantage_title {
+    display: inline-block;
+    margin-bottom: 25px;
     font-size: 32px;
     font-weight: 500;
     line-height: 53px;
 }
 
 .advantage_text {
-    padding-bottom: 170px;
-    padding-right: 30px;
+    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 400;
