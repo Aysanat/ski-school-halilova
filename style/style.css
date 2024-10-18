@@ -100,7 +100,6 @@ img {
 .promo_title {
     padding-bottom: 60px;
     padding-top: 240px;
-    margin: 0;
     font-size: 60px;
     font-weight: 500;
     line-height: 88.92px;
@@ -109,7 +108,6 @@ img {
 
 .promo_text {
     padding-bottom: 260px;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -124,7 +122,6 @@ img {
 .how_learn_title {
     padding-top: 170px;
     padding-bottom: 100px;
-    margin: 0;
     font-size: 48px;
     font-weight: 500;
     line-height: 80.16px;
@@ -136,16 +133,14 @@ img {
     display: flex;
     align-content: space-between;
     column-gap: 30px;
-    row-gap: 70px;
     list-style: none;
 }
 
-/*.advantages_list .advantage_item {
+.advantages_list .advantage_item {
     margin-bottom: 70px;
-}*/
+}
 
 .advantage_item {
-    row-gap: 70px;
     flex-basis: 33.33%;
     display: block;
 }
@@ -172,7 +167,6 @@ img {
 
 .lb_title {
     padding-top: 170px;
-    margin: 0;
     font-size: 48px;
     font-weight: 500;
     line-height: 80.16px;
@@ -223,7 +217,6 @@ img {
 
 .footer_list {
     display: flex;
-    padding: 0;
     list-style: none;
     gap: 15px;
 }
