@@ -6,7 +6,7 @@
     src: url('../fonts/oswald-v53-cyrillic_latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-  
+
 @font-face {
     font-display: swap;
     font-family: 'Montserrat';
@@ -25,7 +25,7 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* { 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -128,20 +128,20 @@ img {
     text-align: center;
 }
 
-.advantages_list,
-.advantages_list_2 {
+.advantages_list {
     display: flex;
     align-content: space-between;
+    flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 70px;
     list-style: none;
 }
 
 .advantages_list .advantage_item {
-    margin-bottom: 70px;
 }
 
 .advantage_item {
-    flex-basis: 33.33%;
+    flex-basis: calc(33.33% - 60px / 3);
     display: block;
 }
 
@@ -195,6 +195,7 @@ img {
 }
 
 .visual {
+    flex-basis: calc(25% - 90px / 3);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
